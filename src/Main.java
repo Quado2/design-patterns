@@ -10,6 +10,5 @@ public class Main {
     canvas.setCurrentTool(new SelectionTool());
     canvas.mouseDown();
     canvas.mouseUp();
-
   }
 }
