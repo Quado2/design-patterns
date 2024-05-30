@@ -7,6 +7,7 @@ public class WindowsOperatingSysten extends OperatingSystem{
 
     @Override
     public void changeDir(String dir) {
+        System.out.println("Changed to windows - " + dir);
         //Windows command
     }
 

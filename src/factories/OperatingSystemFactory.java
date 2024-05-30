@@ -35,11 +35,11 @@ Example creation of object.
 OperatingSystem operatingSystem = OperatingSystemFactory.getInstance("WINDOWS" , "WIN7" ,"x64");
 OperatingSystem operatingSystem2 = OperatingSystemFactory.getInstance("LINUX" , "DEB" ,"x64");
  */
-    public static OperatingSystem getInstance(String type, String version, String architecture) {
+    public static OperatingSystem getInstance(OsType type, String version, String architecture) {
         switch (type){
-            case "WINDOWS":
+            case WINDOWS:
                 return new WindowsOperatingSysten(version,architecture);
-            case "LINUX":
+            case LINUX:
                 return new LinuxOperatingSystem(version,architecture);
             default:
                 throw new IllegalArgumentException("OS Not supported");

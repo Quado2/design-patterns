@@ -8,7 +8,7 @@ public class LinuxOperatingSystem extends OperatingSystem{
 
     @Override
     public void changeDir(String dir) {
-
+        System.out.println("Changed to Linux - " + dir);
     }
 
     @Override
