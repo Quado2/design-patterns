@@ -22,4 +22,14 @@ package prototype;
  * https://reactiveprogramming.io/blog/en/design-patterns/prototype
  */
 public class Main {
+
+  public static void main(String[] args) throws CloneNotSupportedException {
+  BookShop bs = new BookShop();
+  bs.loadData();
+  bs.setShopName("Quado");
+  System.out.println(bs);
+
+  BookShop bs1 = (BookShop) bs.clone();
+  System.out.println(bs1);
+  }
 }
