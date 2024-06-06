@@ -1,6 +1,6 @@
-package decorator;
+package decorator.components;
 
-public class Year2Fee implements SchoolFee{
+public class Year2Fee extends SchoolFee{
   @Override
   public int getFee() {
     return 20000;
