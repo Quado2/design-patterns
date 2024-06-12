@@ -1,4 +1,4 @@
-package flyweight;
+package flyweight.app1;
 
 /*
     References: https://www.digitalocean.com/community/tutorials/flyweight-design-pattern-java
@@ -9,7 +9,7 @@ import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
-import static flyweight.ShapeFactory.ShapeType;
+import static flyweight.app1.ShapeFactory.ShapeType;
 
 public class DrawingClient extends JFrame {
 
