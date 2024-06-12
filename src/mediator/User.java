@@ -7,6 +7,7 @@ public abstract class User {
     public User(ChatMediator med, String name){
         this.mediator=med;
         this.name=name;
+        mediator.addUser(this);
     }
 
     public abstract void send(String msg);
